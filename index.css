@@ -1,0 +1,114 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+
+body{
+	font-family: Gill Sans, Gill Sans MT, Myriad Pro, DejaVu Sans Condensed, Helvetica, Arial," sans-serif";
+	margin: 0px;
+	padding: 0px;
+	background-image: url("./images/backdrop2.jpg");/*radial-gradient(ellipse at bottom, aliceblue 0%, #090A0F
+	70%);*/
+	background-size: 100% auto;
+    background-repeat: no-repeat;
+	color: black;
+}
+
+* {
+    box-sizing: border-box;
+}
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+h1{
+  color: white;
+	font-size: 36pt;
+	font-family: 'Josefin Slab', serif;
+  -webkit-animation: neon1 1.5s ease-in-out infinite alternate;
+  -moz-animation: neon1 1.5s ease-in-out infinite alternate;
+  animation: neon1 1.5s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes neon1 {
+  from {
+    text-shadow: 0 0 1px #fff, 0 0 2px #fff, 0 0 4px #fff, 0 0 8px #FF1177, 0 0 16px #FF1177, 0 0 20px #FF1177, 0 0 100px #FF1177, 0 0 150px #FF1177;
+	color: white;
+  }
+  to {
+	color: pink;
+    text-shadow: 0 0 1px #fff, 0 0 2px #fff, 0 0 3px #fff, 0 0 4px #FF1177, 0 0 5px #FF1177, 0 0 6px #FF1177, 0 0 50px #FF1177, 0 0 75px #FF1177;
+  }
+}
+
+h2, h3, h4, h5 {
+	font-family: 'Josefin Slab', serif;
+}
+
+/* For mobile phones: */
+[class*="col-"] {
+    width: 100%;
+	display: inline-block;
+	float: left;
+}
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+}
+
+.header{
+	text-align: center;
+	width: 100%;
+	margin-bottom: 10px;
+	display: inline-block;
+	margin-top: 0px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.profile{
+	padding: 10px;
+	background: rgba(255,169,171,0.62);
+}
+
+.profilePhoto{
+	width: 80%;
+	height: auto;
+	margin-left: calc(10% - 3px);
+}
+
+
+.caption{
+	font-family: 'Josefin Slab', serif;
+	padding: 5px;
+	background: rgba(255,255,255,0.72);
+}
+
+.memberCaption{
+	text-align: center;
+}
+
+.member{
+	padding: 15px;
+	background: rgba(255, 255, 255, 0.9);
+	color: black;
+	margin: 5px;
+}
+
+.about{
+	background: rgba(255, 255, 255, 0.8);
+	padding: 10px;
+}
